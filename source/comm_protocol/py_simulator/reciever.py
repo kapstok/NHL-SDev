@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import pika
-#import thread
 import model
 
 connection = pika.BlockingConnection(pika.ConnectionParameters(host=model.host))
@@ -32,5 +31,3 @@ channel.basic_consume (
 
 print('Waiting for a sign..')
 channel.start_consuming()
-#thread.start_new_thread(channel.start_consuming,())
-#thread.start_new_thread(raw_input,())
