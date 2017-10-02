@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package simulator;
+
+option java_package = "nl.nhl.software_development.controller.message";
+option java_outer_classname = "TestMessage";
+
+message ExampleMessage {
+    int64 timestamp = 1;
+    string payload = 2;
+}
