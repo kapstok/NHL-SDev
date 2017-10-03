@@ -1,4 +1,4 @@
 # Jan Allersma: groep 11. Maakt simulator.
-groepsnaam = '11'
-programma = 'simulator'
+shard = '11'
+vhost = '/11'
 host = '127.0.0.1'

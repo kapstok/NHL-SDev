@@ -3,11 +3,11 @@
 import pika
 import model
 
-connection = pika.BlockingConnection(pika.ConnectionParameters(host=model.host))
+connection = pika.BlockingConnection(pika.ConnectionParameters(host=model.host, virtual_host=model.vhost))
 channel = connection.channel()
 
 channel.exchange_declare(
-	exchange=model.programma,
+	exchange='1234',
 	exchange_type='direct'
 )
 
@@ -15,9 +15,9 @@ result = channel.queue_declare(exclusive=True)
 queuename = result.method.queue
 
 channel.queue_bind(
-	exchange=model.programma,
+	exchange='1234',
 	queue=queuename,
-	routing_key=model.groepsnaam
+	routing_key=model.shard
 )
 
 def callback(ch, method, prop, body):

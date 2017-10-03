@@ -3,17 +3,17 @@
 import pika
 import model
 
-connection = pika.BlockingConnection(pika.ConnectionParameters(model.host))
+connection = pika.BlockingConnection(pika.ConnectionParameters(host=model.host, virtual_host=model.vhost))
 channel = connection.channel()
 
 channel.exchange_declare(
-	exchange=model.programma,
+	exchange='1234',
 	exchange_type='direct'
 )
 
 channel.basic_publish (
-	exchange=model.programma,
-	routing_key=model.groepsnaam,
+	exchange='1234',
+	routing_key=model.shard,
 	body='Hallo Wereld!'
 )
 
