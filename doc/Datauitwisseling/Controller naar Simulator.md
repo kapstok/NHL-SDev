@@ -21,7 +21,10 @@ Array “Lights” met de volgende objecten:
 | 2 | Rechtdoor doorrijden |
 | 3 | Linksaf doorrijden |
 | 4 | Rechtsaf doorrijden |
-| 5 | Alle richtingen doorrijden |
+| 5 | Linksaf + rechtdoor doorrijden |
+| 6 | Rechtsaf + rechtdoor doorrijden |
+| 7 | Linksaf + rechtsaf doorrijden |
+| 8 | Alle richtingen doorrijden |
 #### Spoorwegovergang (Id: 6xx)
 | Status | Beschrijving |
 | ------ | ------ |
