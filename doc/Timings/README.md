@@ -3,8 +3,6 @@
 Wanneer een trein over een trigger heen gaat, in dit geval betekend dit gespawned;  
 volgt het volgende proces:
 
-[een trein irl (YouTube)](https://youtu.be/8rTJjIsKTa0?t=27s)
-
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=8rTJjIsKTa0&t=27s
 " target="_blank"><img src="http://img.youtube.com/vi/8rTJjIsKTa0/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>  
