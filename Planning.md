@@ -5,7 +5,7 @@ De planning van de weken is opgedeeld in afronding en lesinvulling. Alles wat in
 - Erwin Damsma
 - Ruud Haertlein
 - Sietse Hoekstra
-- **...?**
+- Mark Zwiers
 
 ## Week 42 - 16 oktober
 ### Afgerond
