@@ -2,6 +2,7 @@
 De controller stuurt informatie over de status van alle stoplichten naar de simulator wanneer één of meerdere stoplichten van status dient te veranderen.
 ## Databeschrijving
 Array “Lights” met de volgende objecten:
+
 | Naam | Beschrijving | Type |
 | ------ | ------ | ------ | 
 | Id | Id van verkeerslicht. Zie plattegrond voor de Id’s | integer |
