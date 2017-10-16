@@ -1,5 +1,5 @@
 # Test Case 7 (repetitie)
-Verantwoordelijke: **n.t.b.**
+Verantwoordelijke: **Mark Zwiers**
 
 ## Doel
 **n.t.b.**

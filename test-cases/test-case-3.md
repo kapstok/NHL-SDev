@@ -1,5 +1,5 @@
 # Test Case 3
-Verantwoordelijke: **n.t.b.**
+Verantwoordelijke: **Jeffrey Verbeek**
 
 ## Doel
 **n.t.b.**

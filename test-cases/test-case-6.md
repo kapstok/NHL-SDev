@@ -1,5 +1,5 @@
 # Test Case 6
-Verantwoordelijke: **n.t.b.**
+Verantwoordelijke: **Joris de Jong**
 
 ## Doel
 **n.t.b.**

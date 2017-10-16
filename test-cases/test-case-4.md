@@ -1,5 +1,5 @@
 # Test Case 4
-Verantwoordelijke: **n.t.b.**
+Verantwoordelijke: **Jan Allersma**
 
 ## Doel
 **n.t.b.**

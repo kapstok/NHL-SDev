@@ -1,5 +1,5 @@
 # Test Case 8 (generale repetitie)
-Verantwoordelijke: **n.t.b.**
+Verantwoordelijke: **Anne-dirk de Jong**
 
 ## Doel
 **n.t.b.**

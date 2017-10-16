@@ -1,5 +1,5 @@
 # Test Case 5
-Verantwoordelijke: **n.t.b.**
+Verantwoordelijke: **Jelmer Smid**
 
 ## Doel
 **n.t.b.**
