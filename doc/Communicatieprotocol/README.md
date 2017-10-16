@@ -12,6 +12,20 @@ The Simulator consumes messages from the 'simulator' queue and sends requests vi
 
 ##### Stale messages
 It is possible that the Simulator gets old messages during startup, which got left behind by a previous Controller.
-To make sure no messages get left behind in the queue when closing one of the applications, we can let RabbitMQ delete our queues when they are no longer in use. When using the [`queueDeclare`](http://www.rabbitmq.com/amqp-0-9-1-quickref.html#queue.declare) function (Java, C#) make sure to set the property [`auto-delete`](http://www.rabbitmq.com/amqp-0-9-1-reference.html#queue.declare.auto-delete) to `true`. This will delete the queue when all connections to it are closed, and thus makes sure no messages get left behind.
+To make sure no messages get left behind in the queue when closing one of the applications, we can let RabbitMQ delete our queues when they are no longer in use. When using the [`queueDeclare`](http://www.rabbitmq.com/amqp-0-9-1-quickref.html#queue.declare) function (Java, C#) make sure to set the property [`auto-delete`](http://www.rabbitmq.com/amqp-0-9-1-reference.html#queue.declare.auto-delete) to `true`.
 
-*NOTE: When using `auto-delete=true` you won't be able to connect with someone using `auto-delete=false` and vice versa. Please all make sure you're setting it to `true`*
+We also need to set a Time-To-Life (TTL) on the queue. More information about TTL can be found [here](https://www.rabbitmq.com/ttl.html). For Java this can be done using:
+```java
+Map<String, Object> args = new HashMap<String, Object>();
+args.put("x-message-ttl", 10000);
+channel.queueDeclare("myqueue", false, false, true, args);
+```
+And for .Net using:
+```cs
+var args = new Dictionary<string, object>();
+args.Add("x-message-ttl", 10000);
+model.QueueDeclare("myqueue", false, false, true, args);
+```
+Notice that the last argument of `queueDeclare` changed from `null` to a Map/Dictionary. The time is in ms, please set it to 10 seconds / 10 000 ms. For other languages the process should be similar.
+
+*NOTE: When using `auto-delete=true` you won't be able to connect with someone using `auto-delete=false` and vice versa. Please all make sure you're setting it to `true`, this is also the case for TTL.*
