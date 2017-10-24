@@ -143,7 +143,7 @@ Let goed op dat je alle afspraken volgt zoals beschreven in:
 ```
 
 ## Testuitvoering
-Er is tijdens de les 30 minuten beschikbaar voor het valideren van de test. De eerste 5 minuten reserveren we voor het klaarzetten van het lokaal. We zetten de tafels neer in groepjes van 2. Bij het testen hebben de controllers een vaste plek en schuiven de simulatoren steeds door naar een andere tafel/controller. De combinaties zijn steeksproefgewijs.
+Er is tijdens de les 30 minuten beschikbaar voor het valideren van de test. De eerste 5 minuten reserveren we voor het klaarzetten van het lokaal. We zetten de tafels neer in groepjes van 2. Bij het testen hebben de controllers een vaste plek en schuiven de simulatoren steeds door naar een andere tafel/controller.
 
 De kolomnamen zijn de controllers en in het grid staat met welke simulator de controller getest wordt voor iedere ronde.
 
