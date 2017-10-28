@@ -10,6 +10,7 @@
 *.so
 *.dll
 *.dylib
+*/Thumbs\.db
 
 # Qt-es
 
