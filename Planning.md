@@ -33,7 +33,7 @@ Herfstvakantie
 | --- | --- |
 | Resultaten Test case 1 op github | Sietse Hoekstra |
 | [Test case 2][test-case-2] | Erwin Damsma |
-| Specificatie van Test case 3 op github | **n.t.b.** |
+| Specificatie van Test case 3 op github | Jeffrey Verbeek |
 
 ### Lesinvulling
 | Tijd | Minuten | Wat |
@@ -49,7 +49,7 @@ Herfstvakantie
 | --- | --- |
 | Resultaten Test case 2 op github | Erwin Damsma |
 | [Test case 3][test-case-3] | Jeffrey Verbeek |
-| Specificatie van Test case 4 op github | **n.t.b.** |
+| Specificatie van Test case 4 op github | Jan Allersma |
 
 ### Lesinvulling
 | Tijd | Minuten | Wat |
