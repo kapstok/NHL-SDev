@@ -167,22 +167,29 @@ De kolomnamen zijn de controllers en in het grid staat met welke simulator de co
 Rapporteer jouw resultaten z.s.m. na de les aan de verantwoordelijke van deze test, zodat hij de resultaten in kaart kan brengen.
 
 ## Resultaten
-| Koppel | Resultaat | Opmerkingen |
-| --- | --- | --- |
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
-| 6 | | |
-| 7 | | |
-| 8 | | |
-| 9 | | |
-| 10 | | |
-| 11 | | |
-| 12 | | |
-| 13 | | |
-| 14 | | |
+| Koppel | Geslaagd Controller | Geslaagd Simulator | Opmerkingen |
+| --- | --- | --- | --- |
+| 1 | Nee | Nee | |
+| 2 | Nee | Nee | |
+| 3 | Nee | Nee | |
+| 4 | Ja | Nee | Te weinig testresultaten voor simulator |
+| 5 | Nee | Nee | Te weinig testresultaten |
+| 6 | Nee | Ja | |
+| 7 | Nee | Nee | |
+| 8 | Nee | Nee | |
+| 9 | - | - | Onduidelijk testresultaat, mogelijk geslaagd |
+| 10 | Nee | Nee | |
+| 11 | Nee | Nee | Te weinig testresultaten |
+| 12 | Ja | Ja | |
+| 13 | Ja | Nee | |
+| 14 | Nee | Nee | |
+
+Er waren een aantal problemen tijdens het testen, waardoor de test over het algemeen een negatief resultaat had. Een opsomming:
+- Time To Live property niet (goed) geimplementeerd
+- TrafficUpdate niet in een rootobject geplaatst met de naam TrafficUpdate.
+- auto_delete niet op true bij queuedeclare
+
+Doordat er veel problemen waren, en daarmee veel incompatibilteit tussen groepen, is het lastig om te bepalen welke groepen de test gehaald hebben, zoals bijvoorbeeld bij groep 9.
 
 [Datauitwisseling: Simulator naar Controller]: </doc/Datauitwisseling/Simulator%20naar%20Controller.md>
 [Datauitwisseling: Controller naar Simulator]: </doc/Datauitwisseling/Controller%20naar%20Simulator.md>
