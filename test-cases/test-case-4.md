@@ -6,102 +6,26 @@ Simulator en controller om kunnen laten gaan met alle verskeerssituaties die zic
 
 ## Omschrijving
 Er wordt willekeurig verkeer (auto's, fietsers, voetgangers, bussen, treinen) bij stoplichten gegenereerd in de Simulator. De Simulator stuurt dit in TrafficUpdates naar de Controller toe. De Controller past de statussen van de stoplichten aan, zodat het verkeer veilig kan rijden en stuurt deze in een Lights arrays naar de Simulator. De Simulator stuurt bij iedere wijziging van traffic een TrafficUpdate en de controller blijft verkeerslichten aansturen.
+Het willekeurige verkeer wordt door de simulator gegenereerd middels random variabeles. Je kunt bijvoorbeeld (een equivalent van) ``` Math.Random() % AmountOfLights``` gebruiken.
 
 ## Voorbeelden
-Bericht 1: Simulator -> Controller - Er is een auto die naar rechts of rechtdoor wil rijden.
+Bericht 1: Simulator -> Controller
 ```json
 {
   "TrafficUpdate": {
-    "LightId": 106,
-    "Count": 1,
+    "LightId": <Random Light Id hier>,
+    "Count": <Random getal tussen 1-3 hier>,
     "DirectionRequests": null
   }
 }
 ```
 Bericht 2: Controller stuurt huidige verkeerssituatie als JSON naar Simulator.
 
-Bericht 3: Simulator -> Controller - Twee bussen staan voor een stoplicht. De ene wil rechtdoor, de andere rechtsaf.
-```json
-{
-  "TrafficUpdate": {
-    "LightId": 201,
-    "Count": 2,
-    "DirectionRequests": [
-        2,
-        4
-    ]
-  }
-}
-```
+Bericht 3: Een ander random JSON object dan bij bericht 1.
 
 Bericht 4: Controller stuurt huidige verkeerssituatie als JSON naar Simulator.
 
-Bericht 5: Simulator -> Controller - Een fietser wil oversteken.
-```json
-{
-  "TrafficUpdate": {
-    "LightId": 305,
-    "Count": 1,
-    "DirectionRequests": null
-  }
-}
-```
-Bericht 6: Controller stuurt huidige verkeerssituatie als JSON naar Simulator.
-
-Bericht 7: Simulator -> Controller - Een voetganger wil oversteken.
-```json
-{
-  "TrafficUpdate": {
-    "LightId": 401,
-    "Count": 1,
-    "DirectionRequests": null
-  }
-}
-```
-Bericht 8: Controller stuurt huidige verkeerssituatie als JSON naar Simulator.
-
-Bericht 9: Simulator -> Controller - Een auto wil rechtdoor rijden.
-
-```json
-{
-  "TrafficUpdate": {
-    "LightId": 105,
-    "Count": 1,
-    "DirectionRequests": null
-  }
-}
-```
-Bericht 10: Controller stuurt huidige verkeerssituatie als JSON naar Simulator.
-
-Bericht 11,12 en 13: Simulator -> Controller - De fietser, auto en voetganger steken over. De controller geeft weer de huidige verkeerssituatie terug. Uiteindelijk blijven de bussen staan.
-
-```json
-{
-  "TrafficUpdate": {
-    "LightId": 105,
-    "Count": 0,
-    "DirectionRequests": null
-  }
-}
-```
-```json
-{
-  "TrafficUpdate": {
-    "LightId": 401,
-    "Count": 0,
-    "DirectionRequests": null
-  }
-}
-```
-```json
-{
-  "TrafficUpdate": {
-    "LightId": 305,
-    "Count": 0,
-    "DirectionRequests": null
-  }
-}
-```
+etc...
 
 ## Nog even dit...
 Wellicht een onnodige opmerking, maar **implementeer de time nog niet!** Het kan zijn dat andermans programma dit niet kan handlen, waardoor we onnodige problemen krijgen tijdens het testen.
