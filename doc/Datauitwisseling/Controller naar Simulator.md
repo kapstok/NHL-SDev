@@ -158,11 +158,6 @@ Array “Lights” met de volgende objecten:
       "Time": -1
     },
     {
-      "Id": 501,
-      "Status": 0,
-      "Time": -1
-    },
-    {
       "Id": 601,
       "Status": 2,
       "Time": -1
