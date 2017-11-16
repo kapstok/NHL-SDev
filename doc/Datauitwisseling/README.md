@@ -3,8 +3,8 @@ De datauitwisseling is opgedeeld in drie delen. In ieder deel staat informatie d
 
 ## [Controller naar Simulator]
 ## [Simulator naar Controller]
-## [Overige communicatie]
+## [Simulatiesnelheid]
 
 [Controller naar Simulator]: <Controller%20naar%20Simulator.md>
 [Simulator naar Controller]: <Simulator%20naar%20Controller.md>
-[Overige communicatie]: <Overige%20communicatie.md>
+[Simulatiesnelheid]: <Simulatiesnelheid.md>
