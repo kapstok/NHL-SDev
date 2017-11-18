@@ -23,12 +23,12 @@ Willen simulatoren er voor zorgen dat er vast moeilijke situaties ontstaan in he
     {
       "Id": 301,
       "Status": 0,
-      "Time": 7.0
+      "Time": 7
     },
     {
       "Id": 302,
       "Status": 0,
-      "Time": 14.0
+      "Time": 14
     }
   ]
 }
