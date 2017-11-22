@@ -38,17 +38,17 @@ Rapporteer jouw resultaten z.s.m. na de les aan de verantwoordelijke van deze te
 ## Resultaten
 | Koppel | Resultaat | Opmerkingen |
 | --- | --- | --- |
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
-| 6 | | |
-| 7 | | |
-| 8 | | |
-| 9 | | |
-| 10 | | |
-| 11 | | |
-| 12 | | |
-| 13 | | |
-| 14 | | |
+| 1 | Controller niet getest, simulator werkt. | |
+| 2 | Contr & Sim doen het. | Controller moet nog intellegentie toevoegen. |
+| 3 | Contr & Sim doen het. | Controller moet nog intellegentie toevoegen. Simulator maar 1 keer test. |
+| 4 | Contr doet het. Sim niet getest. | |
+| 5 | Contr doet het. Sim niet getest. | |
+| 6 | Contr & Sim doen het. | |
+| 7 | Sim doet het. Contr niet getest. | |
+| 8 | Contr & Sim ongetest. | |
+| 9 | Contr & Sim doen het. | Contr maar 1 keer getest. Sim heeft botsingen door te snelle stoplichtwissels. |
+| 10 | Contr & Sim ongetest. | |
+| 11 | Contr & Sim doen het. | Sim spawned nog handmatig. Sim maar 1 keer getest. |
+| 12 | Contr & Sim doen het. | Sim heeft 1 test gefaald. |
+| 13 | Contr & Sim ongetest. | |
+| 14 | Contr doet het. Sim ongetest. | |
