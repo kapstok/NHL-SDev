@@ -1,5 +1,5 @@
 # PlatteGrond #
-![<MISSING: Plattegrond.png>](https://i.imgur.com/YCgOZhR.png)  
+![<MISSING: Plattegrond.png>](./extra/PlattegrondV5.png)
   
 
 ----------
